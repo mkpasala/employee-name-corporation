@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+//header
+.user-contianer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  width: 20%;
+
+  .user-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user-logout {
+    margin-left: 10%;
+  }
+}
+
+.sidebar-col,
+.dash-board-col {
+  padding-left: 0 !important;
+}
+
+.sidebar {
+  background-color: #343a40 !important;
+  height: 100%;
+  min-height: 740px;
+
+  .list-group {
+    .list-group-item {
+      background-color: #343a40 !important;
+      color: #9d9d9d;
+    }
+
+  }
+}
+
+.dash-board {
+  margin-top: 2px;
+
+  .nav{
+    justify-content: space-around !important;
+    margin-top: 7% !important;
+  }
+
+  @media(min-width:768px) {
+    .panel-heading {
+      display: none;
+    }
+
+    .panel {
+      border: none;
+      box-shadow: none;
+    }
+
+    .panel-collapse {
+      height: auto;
+
+      &.collapse {
+        display: block;
+      }
+    }
+  }
+
+  @media(max-width:767px) {
+    .tab-content {
+      .tab-pane {
+        display: block;
+      }
+    }
+
+    .nav-tabs {
+      display: none;
+    }
+
+    .panel-title a {
+      display: block;
+    }
+
+    .panel {
+      margin: 0;
+      box-shadow: none;
+      border-radius: 0;
+      margin-top: -2px;
+    }
+
+    .tab-pane {
+      &:first-child {
+        .panel {
+          border-radius: 5px 5px 0 0;
+        }
+      }
+
+      &:last-child {
+        .panel {
+          border-radius: 0 0 5px 5px;
+        }
+      }
+    }
+  }
+
+  
+}
